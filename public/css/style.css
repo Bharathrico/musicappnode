@@ -1,0 +1,199 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+}
+#container
+{
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#holder
+{
+    height: 90vmin;
+    width: 70vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border:3px solid #00ADff;
+    border-radius: 2vmin;
+    box-shadow:0 0 1vmin #03A9F466;
+}
+ #email
+   {
+       font-family: 'Roboto',sans-serif;
+        font-size: 2vmin;
+       outline: none;
+       height:3vmin;
+       width:60vmin;
+       border: 3px solid;
+        border-color: #00ADff;
+       border-radius: 8vmin;
+       padding:10px;
+        background-image :linear-gradient(to right, #ffffff 50%, #000000 50%);
+        background-position: 0;
+        background-size: 200%;
+        opacity: 0.5;
+        transition: all 0.4s;
+        margin-bottom: 5vmin;
+        padding-right: 1vmin;
+        padding-left: 2vmin;
+        cursor: pointer;
+   }
+   #email::placeholder
+   {
+       color:#00000055;
+       transition: all;
+       transition-duration: 0.2s;
+      
+
+   }
+ #email:hover::placeholder
+ {
+     color:white;
+       transition: all;
+       transition-duration: 0.2s;
+ }
+
+   #email:hover
+   {   color:white;
+       /*box-shadow: 0 0 0px 4px rgba(0, 122, 255, 1);*/
+       border: 3px solid #00ADff;
+       background-position: -100%;
+       opacity: 1;
+    }
+    #email:focus
+    {
+        opacity: 0.9;
+     color:bisque;
+     background-position: -100%;
+      border:3; 
+    border: 3px solid #00ADff;
+    }
+    
+    #password
+   {
+       outline: none;
+       font-family: 'Roboto',sans-serif;
+        font-size: 2vmin;
+       height:3vmin;
+       width:60vmin;
+       border: 3px solid;
+        border-color: #00ADff;
+       border-radius: 8vmin;
+       padding:10px;
+        background-image :linear-gradient(to right, #ffffff 50%, #000000 50%);
+        background-position: 0;
+        background-size: 200%;
+        opacity: 0.5;
+        transition: all 0.4s;
+        margin-bottom: 5vmin;
+        padding-right: 1vmin;
+        padding-left: 2vmin;
+        cursor: pointer;
+   }
+   #password::placeholder
+   {
+       color:#00000055;
+       transition: all;
+       transition-duration: 0.2s;
+      
+
+   }
+ #password:hover::placeholder
+ {
+     color:white;
+       transition: all;
+       transition-duration: 0.2s;
+ }
+
+   #password:hover
+   {   color:white;
+       /*box-shadow: 0 0 0px 4px rgba(0, 122, 255, 1);*/
+       border: 3px solid #00ADff;
+       background-position: -100%;
+       opacity: 1;
+    }
+    #password:focus
+    {
+        opacity: 0.9;
+     color:bisque;
+     background-position: -100%;
+      border:3; 
+    border: 3px solid #00ADff;  }
+
+    #enter
+    {
+        border:none;
+        background-color: #F44336;
+        width: 30vmin;
+        height: 5vmin;
+        border-radius: 5vmin;
+        outline:none;
+        color:white;
+        font-family: 'Roboto',sans-serif;
+        font-size: 2vmin;
+        transition: 0.1s all;
+        cursor: pointer;
+
+    }
+    #Signup
+    {
+        border:none;
+        background-color: #03A9F4;
+        width: 25vmin;
+        height: 5vmin;
+        border-radius: 5vmin;
+        outline:none;
+        color:white;
+        font-family: 'Roboto',sans-serif;
+        font-size: 2vmin;
+        margin-bottom: 15vmin;
+        transition: 0.1s all;
+        cursor: pointer;
+
+    }
+
+    #enter:active
+    {
+        opacity: 0.1;
+    }
+
+    #Signup:active
+    {
+        opacity: 0.1;
+    }
+
+    #anim
+    {
+        width:20vmin;
+        height: 20vmin;
+        margin-bottom: 4vmin;
+        margin-top:5vmin;
+    }
+#title
+{
+    font-family: 'Geometos';
+    color: white;
+    font-size: 6vmin;
+    margin-bottom: 5vmin;
+}
+#holder2
+{
+    height: 50vmin;
+    width: 70vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:-5vmin;
+}

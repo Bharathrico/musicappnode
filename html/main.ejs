@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link href="../css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e48c27703a.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="mini" onclick="minify();"><i id="downarr" class="fas fa-arrow-down"></i></div>
+    <a href="/upload" id="upload" target="_blank"><i class="fa fa-upload" aria-hidden="true"></i></a>
+
+    <div id="header">
+        <div id="headername">Melophile</div>
+        <div id="searchholder"></img><input id="search" class="textbox" type="text"></input><button id="searchbutton"
+                onclick="search();"><i class="fa fa-search" aria-hidden="true"></i></button></div>
+    </div>
+
+    <div id="topchartsname">Top charts</div>
+    <div id="topcharts">
+        <div class="box">
+            <div class="chartname">Songname</div>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div id="songlistname">Songlist</div>
+    <div id="songlist">
+        <% for(var i=rowssval.length-1;i>=0;i--){%>
+        <div class="song">
+            <div class="songname"><%=rowssval[i].songname%><br>
+                <div class="albumname">from <span class="highlightname"> <u>
+                            <%=rowssval[i].albumname%></u></span>
+                </div>
+            </div><button class="songbutton" data-name="<%=rowssval[i].songname%>"
+                data-album="<%=rowssval[i].albumname%>" data-song="<%=rowssval[i].filename%>" data-id="<%=i%>"
+                onclick="getref();playsong(this);" id="<%=i%>"><i class="fa fa-play"
+                    aria-hidden="true"></i>Play</button>
+            <svg class="heartuu" id="<%=rowssval[i].id%>buttonhol" data-like="<%=rowssval[i].id%>" data-liked="0"
+                onclick="likepress(this);" data-name="Layer 1" viewBox="0 0 106.36 90.1">
+                <path id="<%=rowssval[i].id%>button" class="cls-1"
+                    d="M395.18,363.52c-28.28-50.9-99.76,15.6-.23,67.62C494.25,379.24,423.58,313.26,395.18,363.52Z"
+                    transform="translate(-341.81 -343.3)" />
+            </svg>
+        </div>
+        <%}%> </div>
+
+                <div id="fixedstuff">
+
+
+                    <div id="details">
+                        <div id="pic"></div>
+                        <div id="songdata">
+                            <div id="songname">songname</div>
+                            <div id="artistname">artist</div>
+                        </div>
+                    </div>
+                    <div id="seeker">
+                        <div id="fill"></div>
+                        <div id="handle"></div>
+                    </div>
+                    <div id="duration">
+                        <div id="currenttime">00:00</div>/
+                        <div id="durationa">00:00</div>
+                    </div>
+                    <div id="controlholder">
+
+                        <div onclick="presong();" id="pre5"><svg id="pre" viewBox="0 0 95 86.6">
+                                <polygon points="75 43.3 0 0 0 86.6 75 43.3" fill="#a3a3a3" />
+                                <rect x="80" width="15" height="86.6" fill="#a3a3a3" />
+                        </div>
+                        <div id="playpause" onclick="playsongfixed();"><svg id="play" viewBox="0 0 75 86.6">
+                                <polygon points="75 43.3 0 0 0 86.6 75 43.3" fill="#a3a3a3" /></svg></div>
+                        <div onclick="nextsong();" id="post5"><svg id="post" viewBox="0 0 95 86.6">
+                                <polygon points="75 43.3 0 0 0 86.6 75 43.3" fill="#a3a3a3" />
+                                <rect x="80" width="15" height="86.6" fill="#a3a3a3" />
+                            </svg></div>
+                    </div>
+                    <div id="volumebar"></div>
+
+                </div>
+                <div id="mini" onclick="minify();"><i id="downarr" class="fas fa-arrow-down"></i></div>
+
+                <script src="../func/main.js"></script>
+</body>
+
+</html>

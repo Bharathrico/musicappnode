@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="holder">
+            <div id="anim"></div>
+            <div id="title">Login</div>
+            <form id="holder2" method="POST">
+                <input id="email" onchange="validateemail()" type="email" name="emailid" placeholder="Email-id"></input>
+                <input id="password" type="password" name="pass" placeholder="Password"></input>
+                <button id="enter" type="submit" onclick="checkval()">Login</button>
+            </form>
+            <a href="./signup"><button id="Signup" type="submit">Signup</button></a>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.7/lottie.js"></script>
+        <script src="../func/anim.js"></script>
+    </div>
+    </div>
+</body>
+
+</html>

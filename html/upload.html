@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="../css/upload.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="formitem" action="/upload" method="POST" enctype="multipart/form-data">
+        <div id="upload">UPLOAD</div>
+        <input class="textbox" name="albumname" placeholder="albumname">
+        <input class="textbox" name="songname" placeholder="songname">
+        <div id="box">
+
+            <select id="type" name="option">
+
+                <option>Pop</option>
+                <option>Melody</option>
+                <option>Rap</option>
+                <option>edm</option>
+                <option>folk</option>
+                <option>classic</option>
+            </select>
+        </div>
+        <input type="file" name="music">
+        <button type=" submit" class="btn" id="finalupload">
+            Upload
+        </button>
+    </form>
+    <script>
+        var root = document.documentElement;
+        document.addEventListener('mousedown', ev => {
+            var el = ev.target;
+            var x = (ev.clientX - el.offsetLeft) / el.offsetWidth;
+            var y = (ev.clientY - el.offsetTop) / el.offsetHeight;
+            root.style.setProperty('--ripple-x', x);
+            root.style.setProperty('--ripple-y', y);
+        });
+    </script>
+    <script src="upload.js"></script>
+</body>
+
+</html>

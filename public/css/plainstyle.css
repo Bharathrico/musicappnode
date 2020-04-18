@@ -1,0 +1,40 @@
+body
+{
+     margin: 0;
+    padding: 0;
+    background-color: #212121;
+}
+
+#welcomeholder
+{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: 'Roboto',sans-serif;
+}
+#welcome
+{
+    color: aliceblue;
+    font-size: 10vmin;
+}
+
+.main
+{
+  text-decoration: none;
+  background: #fff;
+  padding: 3vmin 7vmin 3vmin 7vmin;
+  font-size: vmin;
+  color: #212121;
+  border-radius: 10vmin;
+}
+.main:hover
+{
+    background: #212121;
+    color: #fff;
+    box-shadow: inset 0px 0px 0px 0.2vmin #fff;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../css/style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e48c27703a.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div id="container">
+
+        <form id="holder" method="POST">
+            <div id="title">Signup</div>
+
+            <input class="textbox firstname" name="firstname" placeholder="firstname"></input>
+            <input class="textbox lastname" name="lastname" placeholder="lastname"></input>
+            <input class="textbox username" name="username" id="username" placeholder="phone" minlength="10"
+                maxlength="10" type="text" onchange="phonecheck()"></input>
+            <input class="textbox mail" onchange="validateemail()" id="email" type="email" name="emailid"
+                placeholder="Email-id"></input>
+            <input class="textbox password" id="password" type="password" name="pass" placeholder="Password"
+                onchange="checkeer()"></input>
+            <input class="textbox password2" id="password2" type="password" name="repass"
+                placeholder="Re-enter Password" onchange="checkeer()"></input>
+            <div class="checkholder">
+                <div class="checkboxholder"><input type="checkbox" name="check" id="checkboye"></input></div>
+                <div class="checktext">check if you accept our <a id="terms" href=""
+                        onclick="openterms();return false;">terms and conditions</a></div>
+            </div>
+            <button id="Signup" type="submit" onclick="checkval();">Signup</button>
+        </form>
+
+        <script src="../func/signup.js"></script>
+    </div>
+    <a href="./login"><button id="back"><i class="fas fa-arrow-left"></i> Login</button></a>
+    <div id="termholder">
+        <div id="termsbox">
+            <h1><u>TERMS AND CONDITION</u></h1>
+            <div id="realterms">
+                1.We dont check your data<br><br>
+                2.You click this button and allow us to post every data you give<br><br>
+            </div>
+            <button id="closebutton" onclick="closeterms();return false;">close</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
